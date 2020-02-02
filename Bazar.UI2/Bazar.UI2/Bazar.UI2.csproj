@@ -1,0 +1,587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E8F5DF0-5B83-4516-8995-064BB94ABB92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bazar.UI2</RootNamespace>
+    <AssemblyName>Bazar.UI2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\CommonServiceLocator.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.4.1\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=3.3.1.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Configuration, Version=5.2.5.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.11.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception, Version=5.5.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Interception.Configuration, Version=5.1.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RegistrationByConvention, Version=2.1.9.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ServiceLocation, Version=2.1.2.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.8.11\lib\net46\Unity.ServiceLocation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAtalhos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAtalhos.designer.cs">
+      <DependentUpon>FrmAtalhos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroClientes.designer.cs">
+      <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroDeUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroDeUsuarios.designer.cs">
+      <DependentUpon>FrmCadastroDeUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroFornecedores.designer.cs">
+      <DependentUpon>FrmCadastroFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroFuncionarios.designer.cs">
+      <DependentUpon>FrmCadastroFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroProdutos.designer.cs">
+      <DependentUpon>FrmCadastroProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroTelinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroTelinha.designer.cs">
+      <DependentUpon>FrmCadastroTelinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaCliente.designer.cs">
+      <DependentUpon>FrmConsultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaFornecedores.designer.cs">
+      <DependentUpon>FrmConsultaFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaFuncionarios.designer.cs">
+      <DependentUpon>FrmConsultaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaProdutos.designer.cs">
+      <DependentUpon>FrmConsultaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaTelinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaTelinha.designer.cs">
+      <DependentUpon>FrmConsultaTelinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaUsuarios.designer.cs">
+      <DependentUpon>FrmConsultaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCupom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCupom.designer.cs">
+      <DependentUpon>FrmCupom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFerramentasTelinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFerramentasTelinha.designer.cs">
+      <DependentUpon>FrmFerramentasTelinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatoriosTelinha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatoriosTelinha.designer.cs">
+      <DependentUpon>FrmRelatoriosTelinha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatoriosTelinha2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatoriosTelinha2.designer.cs">
+      <DependentUpon>FrmRelatoriosTelinha2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobre.designer.cs">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAtalhos.resx">
+      <DependentUpon>FrmAtalhos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroClientes.resx">
+      <DependentUpon>FrmCadastroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroDeUsuarios.resx">
+      <DependentUpon>FrmCadastroDeUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroFornecedores.resx">
+      <DependentUpon>FrmCadastroFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroFuncionarios.resx">
+      <DependentUpon>FrmCadastroFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroProdutos.resx">
+      <DependentUpon>FrmCadastroProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroTelinha.resx">
+      <DependentUpon>FrmCadastroTelinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaCliente.resx">
+      <DependentUpon>FrmConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaFornecedores.resx">
+      <DependentUpon>FrmConsultaFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaFuncionarios.resx">
+      <DependentUpon>FrmConsultaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaProdutos.resx">
+      <DependentUpon>FrmConsultaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaTelinha.resx">
+      <DependentUpon>FrmConsultaTelinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaUsuarios.resx">
+      <DependentUpon>FrmConsultaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCupom.resx">
+      <DependentUpon>FrmCupom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFerramentasTelinha.resx">
+      <DependentUpon>FrmFerramentasTelinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatoriosTelinha.resx">
+      <DependentUpon>FrmRelatoriosTelinha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatoriosTelinha2.resx">
+      <DependentUpon>FrmRelatoriosTelinha2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobre.resx">
+      <DependentUpon>FrmSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjdTelinhaImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjudaRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AjudaRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atalho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlocoRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorConsultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorRepor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorReposicao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroClienteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroClienteRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroDeClientesFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroProdutoRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastroProdutoRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastrosRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadastrosRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadClientesimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadFornecedoresImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadFornecedorRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadFornecedorRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CADFU.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadFuncionariosImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadProdutosImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadTelinhaImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadTelinhaImg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadTelinhaImg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CADUSU.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CadUsuariosimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caixaimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaixaRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaixaRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalculadoraRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalendarioRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capturar1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CdClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CODEFIX2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConClienteImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConClienteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConFornecedoresImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConFornecedorRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConFuncionariosImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConProdutosImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConProdutosRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultaRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConsultaRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConTelinhaImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FerramentasRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FerramentasRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FerTelinhaImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form1img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form1img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form1img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONE.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONE.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoMenu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoPronto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoProntoRedondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LU.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menuimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menuimg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PtbForm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelatoriosRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelatoriosRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restaurar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SairX.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SiteRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SiteRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SobreImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SobreRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SobreRedSfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splashimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telinha2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TESTE.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Bazar.Business\Bazar.Business\Bazar.Business.csproj">
+      <Project>{8a4dd83b-1436-43ca-93c1-f8774ee5fe0e}</Project>
+      <Name>Bazar.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Bazar.Domain\Bazar.Domain.csproj">
+      <Project>{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}</Project>
+      <Name>Bazar.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Bazar.Models\Bazar.Models\Bazar.Models.csproj">
+      <Project>{4ba47673-d4d6-4064-8b2c-a240d54fc4c0}</Project>
+      <Name>Bazar.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bazar.StartUp\Bazar.StartUp.csproj">
+      <Project>{0AAB91BE-C86E-44CC-9E43-122BEE878845}</Project>
+      <Name>Bazar.StartUp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

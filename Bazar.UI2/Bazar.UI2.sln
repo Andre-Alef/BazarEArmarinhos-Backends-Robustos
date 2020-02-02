@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.UI2", "Bazar.UI2\Bazar.UI2.csproj", "{8E8F5DF0-5B83-4516-8995-064BB94ABB92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.Business", "..\Bazar.Business\Bazar.Business\Bazar.Business.csproj", "{8A4DD83B-1436-43CA-93C1-F8774EE5FE0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.Models", "..\Bazar.Models\Bazar.Models\Bazar.Models.csproj", "{4BA47673-D4D6-4064-8B2C-A240D54FC4C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.Common", "..\Bazar.Common\Bazar.Common.csproj", "{62DB44B2-8EFC-4DC9-A8BC-FE0B59585809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.Domain", "..\Bazar.Domain\Bazar.Domain.csproj", "{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.Infraestructure", "..\Bazar.Infraestructure\Bazar.Infraestructure.csproj", "{FD696267-2FF1-4683-B7D8-755D61C4A88E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bazar.StartUp", "Bazar.StartUp\Bazar.StartUp.csproj", "{0AAB91BE-C86E-44CC-9E43-122BEE878845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E8F5DF0-5B83-4516-8995-064BB94ABB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8F5DF0-5B83-4516-8995-064BB94ABB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8F5DF0-5B83-4516-8995-064BB94ABB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8F5DF0-5B83-4516-8995-064BB94ABB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A4DD83B-1436-43CA-93C1-F8774EE5FE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A4DD83B-1436-43CA-93C1-F8774EE5FE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A4DD83B-1436-43CA-93C1-F8774EE5FE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A4DD83B-1436-43CA-93C1-F8774EE5FE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA47673-D4D6-4064-8B2C-A240D54FC4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA47673-D4D6-4064-8B2C-A240D54FC4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA47673-D4D6-4064-8B2C-A240D54FC4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA47673-D4D6-4064-8B2C-A240D54FC4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62DB44B2-8EFC-4DC9-A8BC-FE0B59585809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62DB44B2-8EFC-4DC9-A8BC-FE0B59585809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62DB44B2-8EFC-4DC9-A8BC-FE0B59585809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62DB44B2-8EFC-4DC9-A8BC-FE0B59585809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341508AF-21AE-4F6F-82BF-CFAACCBF83DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD696267-2FF1-4683-B7D8-755D61C4A88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD696267-2FF1-4683-B7D8-755D61C4A88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD696267-2FF1-4683-B7D8-755D61C4A88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD696267-2FF1-4683-B7D8-755D61C4A88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAB91BE-C86E-44CC-9E43-122BEE878845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAB91BE-C86E-44CC-9E43-122BEE878845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAB91BE-C86E-44CC-9E43-122BEE878845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAB91BE-C86E-44CC-9E43-122BEE878845}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92DEF076-F1A6-4D73-A800-F2D30517823E}
+	EndGlobalSection
+EndGlobal

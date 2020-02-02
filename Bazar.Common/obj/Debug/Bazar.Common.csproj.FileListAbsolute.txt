@@ -1,0 +1,11 @@
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\bin\Debug\Bazar.Common.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\bin\Debug\Bazar.Common.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\bin\Debug\pt-BR\Bazar.Common.resources.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.csprojAssemblyReference.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.Resources.Errors.resources
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.Resources.Errors.pt-BR.resources
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.csproj.GenerateResource.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\pt-BR\Bazar.Common.resources.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Common\obj\Debug\Bazar.Common.pdb

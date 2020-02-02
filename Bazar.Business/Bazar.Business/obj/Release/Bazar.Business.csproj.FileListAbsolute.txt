@@ -1,0 +1,11 @@
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Business.dll
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Business.pdb
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Dados.dll
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Models.dll
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Dados.pdb
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\bin\Release\Bazar.Models.pdb
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\obj\Release\Bazar.Business.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\obj\Release\Bazar.Business.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\obj\Release\Bazar.Business.csproj.CopyComplete
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\obj\Release\Bazar.Business.dll
+C:\Users\andre\source\repos\Bazar.Business\Bazar.Business\obj\Release\Bazar.Business.pdb

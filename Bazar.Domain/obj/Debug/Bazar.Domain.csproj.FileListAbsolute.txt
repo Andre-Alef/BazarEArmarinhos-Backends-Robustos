@@ -1,0 +1,12 @@
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Domain.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Domain.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Common.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Common.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\pt-BR\Bazar.Common.resources.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\obj\Debug\Bazar.Domain.csprojAssemblyReference.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\obj\Debug\Bazar.Domain.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\obj\Debug\Bazar.Domain.csproj.CopyComplete
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\obj\Debug\Bazar.Domain.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\obj\Debug\Bazar.Domain.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Models.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Domain\bin\Debug\Bazar.Models.pdb

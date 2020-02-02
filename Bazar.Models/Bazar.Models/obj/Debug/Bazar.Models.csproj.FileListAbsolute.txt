@@ -1,0 +1,12 @@
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\bin\Debug\Bazar.Models.dll
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\bin\Debug\Bazar.Models.pdb
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.dll
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.pdb
+C:\Users\andre\source\repos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.csprojAssemblyReference.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\bin\Debug\Bazar.Models.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\bin\Debug\Bazar.Models.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.csproj.CoreCompileInputs.cache
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.dll
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.pdb
+C:\Users\andre\OneDrive\Área de Trabalho\Bazar_BackendsRobustos\Bazar.Models\Bazar.Models\obj\Debug\Bazar.Models.csprojAssemblyReference.cache
